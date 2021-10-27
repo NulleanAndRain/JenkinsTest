@@ -1,1 +1,1 @@
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\MSTest.exe" "D:\c#\Test\Test.Tests\bin\Debug\Test.Tests.dll" /noLogo /publishresultsfile:"TestResults/results.trx"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" "D:\c#\Test\Test.Tests\bin\Debug\Test.Tests.dll"
