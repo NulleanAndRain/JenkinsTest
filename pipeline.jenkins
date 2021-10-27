@@ -7,5 +7,11 @@ pipeline {
                 bat "build.bat"
             }
         }
+
+        stage('Tests') {
+            stetps {
+                mstest testResultsFile:"**/*.trx", keepLongStdio: true
+            }
+        }
     }
 }
