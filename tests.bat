@@ -1,1 +1,1 @@
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\MSTest.exe" Test.Tests\bin\Debug\Test.Tests.dll
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\MSTest.exe" D:\c#\Test\Test.Tests\bin\Debug\Test.Tests.dll /publishresultsfile:"TestResults/results.trx"
