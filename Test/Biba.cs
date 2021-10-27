@@ -10,7 +10,7 @@ namespace Test
     {
         public static int GetZero()
         {
-            return 0;
+            return 1;
         }
     }
 }
