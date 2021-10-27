@@ -9,7 +9,7 @@ pipeline {
         }
 
         stage('Tests') {
-            stetps {
+            steps {
                 mstest testResultsFile:"**/*.trx", keepLongStdio: true
             }
         }
