@@ -8,6 +8,9 @@ namespace Test
 {
     public class Biba
     {
-        public static int GetZero() => 0;
+        public static int GetZero()
+        {
+            return 0;
+        }
     }
 }
