@@ -15,14 +15,18 @@ pipeline {
         }
 
         stage('Archive') {
-            script {
-                zip zipFile: env.BUILD_NUMBER.toString() + '.zip', dir: 'Test/bin/Release'
+            steps {
+                script {
+                    zip zipFile: env.BUILD_NUMBER.toString() + '.zip', dir: 'Test/bin/Release'
+                }
             }
         }
 
         stage('Unarchive') {
-            script {
-                unzip zipFile: env.BUILD_NUMBER.toString() + '.zip', dir: 'G:\\deploy\\' + env.BUILD_NUMBER.toString()
+            steps {
+                script {
+                    unzip zipFile: env.BUILD_NUMBER.toString() + '.zip', dir: 'G:\\deploy\\' + env.BUILD_NUMBER.toString()
+                }
             }
         }
     }
