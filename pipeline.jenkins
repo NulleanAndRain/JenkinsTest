@@ -13,5 +13,17 @@ pipeline {
                 bat "tests.bat"
             }
         }
+
+        stage('Archive') {
+            script {
+                zip zipFile: env.BUILD_NUMBER.toString() + '.zip', dir: 'Test/bin/Release'
+            }
+        }
+
+        stage('Unarchive') {
+            script {
+                unzip zipFile: env.BUILD_NUMBER.toString() + '.zip', dir: 'G:\\deploy\\' + env.BUILD_NUMBER.toString()
+            }
+        }
     }
 }
