@@ -9,7 +9,7 @@ namespace Test.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            var expected = 0;
+            var expected = 1;
             var actual = Biba.GetZero();
 
             Assert.AreEqual(actual, expected);
